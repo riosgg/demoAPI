@@ -1,20 +1,35 @@
-Challenge Java v0
+Challenge Java - Agenda Telefónica v1
 
-HTTP POST
+MÉTODOS HTTP SOPORTADOS
 
-+ localhost:8080/post
+POST /api/v1/phonebook
 
-ejemplo:
+GET /api/v1/phonebook
+
+DELETE /api/v1/phonebook/{id}
+
+
+
+
+
+
+
+Ejemplos JSON raw:
 
 {
 "id": 1,
 "name": "Nicolás Rios",
-"phone_number": "65026205",
-"cod_area": "+54"
+"phone_number": "1165026205"
 }
 
-HTTP GET
-+ localhost:8080/list
+{
+"id": 2,
+"name": "Grupos Integrados",
+"phone_number": "11MINERIA2"
+}
 
-HTTP DELETE
-+ localhost:8080/delete/{id}
+{
+"id": 3,
+"name": "Juan Tenorio",
+"phone_number": "4411JAVA"
+}

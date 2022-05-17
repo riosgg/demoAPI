@@ -8,32 +8,25 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("")
+@RequestMapping("api/v1/phonebook")
 
 public class Controller {
 
     @Autowired
     private Repository repository;
 
-    @PostMapping("/post")
+    @PostMapping("")
     public void save(@RequestBody Name nametst) {
         repository.save(nametst);
     }
 
-    @GetMapping("/list")
+    @GetMapping("")
     public List<Name> listAll(){
         return repository.findAll();
 
     }
-/*
-    @GetMapping("/listAll")
-    public List<Name> listId(@PathVariable("id") Integer id){
-        return repository.findById(id);
 
-    }
-*/
-
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/{id}")
     public void delete(@PathVariable("id") Integer id){
         repository.deleteById(id);
 
