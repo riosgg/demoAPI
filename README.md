@@ -2,34 +2,29 @@ Challenge Java - Agenda Telefónica v1
 
 MÉTODOS HTTP SOPORTADOS
 
-POST /api/v1/phonebook
+POST /api/v1/agenda
 
-GET /api/v1/phonebook
+PUT /api/v1/agenda/{id}
 
-DELETE /api/v1/phonebook/{id}
+GET /api/v1/agenda
 
-
-
-
+DELETE /api/v1/agenda/{id}
 
 
 
 Ejemplos JSON raw:
 
 {
-"id": 1,
-"name": "Nicolás Rios",
-"phone_number": "1165026205"
+"nombre": "Nicolás Rios",
+"numero": "1165026205"
 }
 
 {
-"id": 2,
-"name": "Grupos Integrados",
-"phone_number": "11MINERIA2"
+"nombre": "Grupos Integrados",
+"numero": "11MINERIA2"
 }
 
 {
-"id": 3,
-"name": "Juan Tenorio",
-"phone_number": "4411JAVA"
+"nombre": "Juan Tenorio",
+"numero": "4411JAVA"
 }
